@@ -23,7 +23,7 @@ const phaseTopBorderColors: Record<string, string> = {
 };
 
 const statusDotClasses: Record<string, string> = {
-  current: 'bg-blue-primary animate-[pulse_2s_infinite]',
+  current: 'bg-product-gov animate-[pulse_2s_infinite]',
   locked: 'bg-text-muted',
   done: 'bg-green-success',
 };
@@ -41,17 +41,17 @@ export function PhaseCard({ card }: { card: PhaseCardData }) {
 
   const baseClasses = `
     relative overflow-hidden bg-bg-surface border rounded-2xl p-5
-    no-underline text-inherit shadow-[0_1px_2px_rgba(0,0,0,0.04)]
+    no-underline text-inherit
     transition-all duration-300
     before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px]
     ${borderColor}
   `;
 
   const stateClasses = isCurrent
-    ? 'border-border-active before:opacity-100 cursor-pointer hover:border-[rgba(0,0,0,0.15)] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)]'
+    ? 'border-border-active before:opacity-100 cursor-pointer hover:border-[rgba(0,0,0,0.15)] hover:-translate-y-1 hover:shadow-[var(--shadow-glow-primary)]'
     : isLocked
       ? 'border-border-subtle opacity-50 cursor-not-allowed before:opacity-0'
-      : 'border-border-subtle before:opacity-0 cursor-pointer hover:border-[rgba(0,0,0,0.15)] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:before:opacity-100';
+      : 'border-border-subtle before:opacity-0 cursor-pointer hover:border-[rgba(0,0,0,0.15)] hover:-translate-y-1 hover:shadow-[var(--shadow-glow-primary)] hover:before:opacity-100';
 
   const content = (
     <>
@@ -66,7 +66,7 @@ export function PhaseCard({ card }: { card: PhaseCardData }) {
       <div className="font-mono text-xs text-text-muted mb-2.5">{card.weeks}</div>
       <div className="text-[13px] text-text-secondary leading-relaxed">{card.description}</div>
       <div
-        className={`inline-flex items-center gap-1.5 mt-3.5 px-2.5 py-1 rounded-xl text-[11px] font-semibold ${statusBadgeClasses[card.status]}`}
+        className={`inline-flex items-center gap-1.5 mt-3.5 px-2.5 py-1 rounded-full text-[11px] font-semibold ${statusBadgeClasses[card.status]}`}
       >
         <span className={`w-1.5 h-1.5 rounded-full ${statusDotClasses[card.status]}`} />
         {card.statusLabel}

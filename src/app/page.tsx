@@ -103,13 +103,15 @@ export default function Home() {
       <main className="max-w-[1100px] mx-auto px-6">
         {/* ── Hero ── */}
         <section className="text-center py-16 pb-12">
-          <div className="inline-block text-xs font-semibold px-4 py-1.5 bg-blue-light text-blue-primary rounded-[20px] mb-5">
+          <div className="inline-block text-xs font-semibold px-4 py-1.5 bg-blue-primary/10 text-blue-primary rounded-full uppercase tracking-wider mb-5">
             {landingHero.badge}
           </div>
           <h1 className="font-display text-[clamp(28px,4vw,42px)] font-extrabold leading-tight mb-4">
-            Tu guía para implementar
+            Tu guia para implementar
             <br />
-            SovraGov en 90 días
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0077cc] to-[#7c3aed]">
+              SovraGov en 90 dias
+            </span>
           </h1>
           <p className="text-text-secondary text-base max-w-2xl mx-auto leading-relaxed">
             {landingHero.description}
@@ -270,7 +272,7 @@ export default function Home() {
             }}
             className={`inline-block font-display font-bold text-base px-8 py-4 rounded-xl transition-all no-underline ${
               readinessResult
-                ? 'bg-blue-primary text-white hover:bg-blue-hover shadow-[0_4px_12px_rgba(0,102,204,0.25)] hover:-translate-y-0.5'
+                ? 'bg-blue-primary text-white! hover:bg-blue-hover shadow-lg shadow-blue-primary/20 hover:-translate-y-0.5'
                 : 'bg-bg-elevated text-text-muted cursor-not-allowed'
             }`}
           >

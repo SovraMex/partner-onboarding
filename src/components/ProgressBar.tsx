@@ -30,7 +30,7 @@ export function ProgressBar({
           className="h-full rounded-[3px] transition-[width] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
           style={{
             width: `${percent}%`,
-            background: 'linear-gradient(90deg, var(--blue-primary), var(--purple-accent))',
+            background: 'var(--gradient-progress)',
           }}
         />
       </div>

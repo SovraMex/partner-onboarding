@@ -23,7 +23,7 @@ export function PhaseNav({ prevHref, prevLabel, nextHref, nextLabel }: PhaseNavP
       {nextHref && nextLabel ? (
         <Link
           href={nextHref}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display text-sm font-semibold no-underline bg-blue-primary text-white hover:bg-blue-hover hover:-translate-y-px transition-all"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display text-sm font-semibold no-underline bg-blue-primary text-white! hover:bg-blue-hover hover:-translate-y-px transition-all shadow-lg shadow-blue-primary/20"
         >
           {nextLabel} →
         </Link>

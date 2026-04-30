@@ -34,7 +34,7 @@ export type TimelinePhase = {
 
 export function TimelineSidebar({ phases }: { phases: TimelinePhase[] }) {
   const dotClasses: Record<string, string> = {
-    active: 'bg-blue-primary shadow-[0_0_6px_rgba(0,102,204,0.4)]',
+    active: 'bg-blue-primary shadow-[0_0_6px_rgba(0,119,204,0.4)]',
     pending: 'bg-text-muted',
     done: 'bg-green-success',
   };

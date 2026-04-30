@@ -53,40 +53,52 @@ export function Header() {
   const computedPhases = computeStates(pathname);
 
   return (
-    <header className="border-b border-border-subtle py-4 sticky top-0 bg-bg-primary/90 backdrop-blur-[20px] z-[100]">
-      <div className="max-w-[1100px] mx-auto px-6 flex items-center justify-between">
-        <Link
-          href="/"
-          className="font-display font-bold text-xl text-blue-primary no-underline flex items-center gap-2"
-        >
-          <span className="w-2 h-2 bg-blue-primary rounded-full shadow-[0_0_8px_rgba(0,102,204,0.4)]" />
-          Sovra Partners
-        </Link>
+    <header className="sticky top-0 z-[100]">
+      <div className="border-b border-border-subtle py-4 bg-bg-primary/90 backdrop-blur-[20px]">
+        <div className="max-w-[1100px] mx-auto px-6 flex items-center justify-between">
+          <Link
+            href="/"
+            className="font-display font-bold text-xl no-underline flex items-center gap-2.5"
+          >
+            {/* Sovra wordmark (color on light) */}
+            <img
+              src="https://www.sovra.io/branding/logos/sovra-wordmark-color-light.svg"
+              alt="Sovra"
+              className="h-7"
+            />
+            <span className="text-text-muted text-sm font-normal">Partners</span>
+          </Link>
 
-        {isLanding ? (
-          <div className="text-[13px] text-text-muted">
-            ¿Necesitas ayuda?{' '}
-            <a href="mailto:partners@sovra.io" className="text-blue-primary no-underline">
-              partners@sovra.io
-            </a>
-          </div>
-        ) : (
-          <nav className="flex gap-1 max-md:hidden">
-            {computedPhases.map((phase) => (
-              <Link
-                key={phase.id}
-                href={phase.state === 'locked' ? '#' : phase.href}
-                className={`px-3.5 py-1.5 rounded-[20px] text-[13px] font-medium no-underline transition-all border border-transparent ${navStateClasses[phase.state]}`}
-                onClick={(e) => {
-                  if (phase.state === 'locked') e.preventDefault();
-                }}
-              >
-                {phase.label}
-              </Link>
-            ))}
-          </nav>
-        )}
+          {isLanding ? (
+            <div className="text-[13px] text-text-muted">
+              Necesitas ayuda?{' '}
+              <a href="mailto:partners@sovra.io" className="text-blue-primary no-underline">
+                partners@sovra.io
+              </a>
+            </div>
+          ) : (
+            <nav className="flex gap-1 max-md:hidden">
+              {computedPhases.map((phase) => (
+                <Link
+                  key={phase.id}
+                  href={phase.state === 'locked' ? '#' : phase.href}
+                  className={`px-3.5 py-1.5 rounded-full text-[13px] font-medium no-underline transition-all border border-transparent ${navStateClasses[phase.state]}`}
+                  onClick={(e) => {
+                    if (phase.state === 'locked') e.preventDefault();
+                  }}
+                >
+                  {phase.label}
+                </Link>
+              ))}
+            </nav>
+          )}
+        </div>
       </div>
+      {/* Signature gradient divider bar */}
+      <div
+        className="h-[4px]"
+        style={{ background: 'var(--gradient-divider)' }}
+      />
     </header>
   );
 }
