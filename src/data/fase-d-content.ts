@@ -54,16 +54,16 @@ export const faseDHero = {
 // Context card
 export const faseDContext = {
   completedInC: [
-    'Tramites digitalizados y modelados en la plataforma',
-    'Validados con areas duenas',
-    'Testing end-to-end pasado — 0 bugs criticos',
+    'Trámites digitalizados y modelados en la plataforma',
+    'Validados con áreas dueñas',
+    'Testing end-to-end pasado — 0 bugs críticos',
     'Integraciones funcionando (IDP, pagos si aplica)',
   ],
-  focusNow: 'Preparar personas (operadores, comunicacion, tomadores de decision) y definir soporte. Todo listo para el dia 1.',
+  focusNow: 'Preparar personas (operadores, comunicación, tomadores de decisión) y definir soporte. Todo listo para el día 1.',
   criticalRoles: [
     { label: 'Soporte/capacitador — capacita operadores', color: 'green' as const },
-    { label: 'Comunicacion — materiales y discurso', color: 'blue' as const },
-    { label: 'Dueno del proyecto — discurso politico', color: 'purple' as const },
+    { label: 'Comunicación — materiales y discurso', color: 'blue' as const },
+    { label: 'Dueño del proyecto — discurso político', color: 'purple' as const },
   ],
 };
 
@@ -106,22 +106,22 @@ export const faseDStorageKey = 'phaseD_checklist';
 export const faseDMeetings: Meeting[] = [
   {
     number: '1',
-    title: 'Capacitacion de operadores',
+    title: 'Capacitación de operadores',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '2+ horas por grupo',
-    subtitle: 'Cada operador sabe usar la plataforma para su flujo especifico.',
+    subtitle: 'Cada operador sabe usar la plataforma para su flujo específico.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Cada operador sabe usar la plataforma para su flujo especifico. Sin esto, el ciudadano tiene mala experiencia.',
+        content: 'Cada operador sabe usar la plataforma para su flujo específico. Sin esto, el ciudadano tiene mala experiencia.',
       },
       {
         label: 'Agenda',
         items: [
-          'Demo del flujo completo del tramite (vista operador)',
-          'Practica supervisada — cada operador gestiona un expediente de prueba',
-          'Dudas y casuistica: que hacer cuando X pasa',
+          'Demo del flujo completo del trámite (vista operador)',
+          'Práctica supervisada — cada operador gestiona un expediente de prueba',
+          'Dudas y casuística: qué hacer cuando X pasa',
           'Accesos individuales verificados',
         ],
       },
@@ -130,7 +130,7 @@ export const faseDMeetings: Meeting[] = [
       { text: 'Operadores capacitados en su flujo' },
       { text: 'Accesos individuales confirmados' },
       { text: 'Lista de dudas frecuentes documentada' },
-      { text: 'Al menos 1 dia de practica supervisada antes de produccion' },
+      { text: 'Al menos 1 día de práctica supervisada antes de producción' },
     ],
     attendees: [
       { label: 'Operadores por grupo/area', required: true },
@@ -141,15 +141,15 @@ export const faseDMeetings: Meeting[] = [
   },
   {
     number: '2',
-    title: 'Socializacion modelo de soporte',
+    title: 'Socialización modelo de soporte',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '1 hora',
-    subtitle: 'Todos saben a quien escalar que. Si no esta claro antes del lanzamiento, todo te llega a ti.',
+    subtitle: 'Todos saben a quién escalar qué. Si no está claro antes del lanzamiento, todo te llega a ti.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Todos saben a quien escalar que. Si no esta claro antes del lanzamiento, todo te llega a ti.',
+        content: 'Todos saben a quién escalar qué. Si no está claro antes del lanzamiento, todo te llega a ti.',
       },
       {
         label: 'Agenda',
@@ -157,7 +157,7 @@ export const faseDMeetings: Meeting[] = [
           'Presentar 3 niveles de soporte (Gobierno → Partner → Sovra)',
           'SLAs por severidad (referencia doc completo del Kit)',
           'Canales definidos por nivel',
-          'Proceso de escalacion paso a paso',
+          'Proceso de escalación paso a paso',
           'Directorio de contactos',
         ],
       },
@@ -170,14 +170,14 @@ export const faseDMeetings: Meeting[] = [
     ],
     attendees: [
       { label: 'Coordinador gobierno', required: true },
-      { label: 'Dueno del proyecto', required: true },
+      { label: 'Dueño del proyecto', required: true },
       { label: 'Equipo Nivel 1 gobierno', required: true },
-      { label: 'Lider partner', required: true },
+      { label: 'Líder partner', required: true },
     ],
   },
   {
     number: '3',
-    title: 'Sesion ejecutiva — Discurso politico',
+    title: 'Sesión ejecutiva — Discurso político',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '1 hora max',
@@ -190,27 +190,27 @@ export const faseDMeetings: Meeting[] = [
       {
         label: 'Agenda',
         items: [
-          'Que valor genera la plataforma (en lenguaje politico, no tecnico)',
-          'Metricas clave para comunicar',
-          'Que decir ante preguntas dificiles',
+          'Qué valor genera la plataforma (en lenguaje político, no técnico)',
+          'Métricas clave para comunicar',
+          'Qué decir ante preguntas difíciles',
           'Practicar el pitch (2 minutos)',
         ],
       },
     ],
     deliverables: [
-      { text: 'Talking points documentados (1 pagina)' },
-      { text: 'Metricas clave seleccionadas (3-5)' },
-      { text: 'Dueno del proyecto listo para comunicar' },
+      { text: 'Talking points documentados (1 página)' },
+      { text: 'Métricas clave seleccionadas (3-5)' },
+      { text: 'Dueño del proyecto listo para comunicar' },
     ],
     attendees: [
-      { label: 'Dueno del proyecto', required: true },
-      { label: 'Comunicacion gobierno', required: true },
-      { label: 'Lider partner (facilita)', required: false },
+      { label: 'Dueño del proyecto', required: true },
+      { label: 'Comunicación gobierno', required: true },
+      { label: 'Líder partner (facilita)', required: false },
     ],
   },
   {
     number: '4',
-    title: 'Preparacion de comunicacion y lanzamiento',
+    title: 'Preparación de comunicación y lanzamiento',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '1-2 horas',
@@ -224,23 +224,23 @@ export const faseDMeetings: Meeting[] = [
         label: 'Agenda',
         items: [
           'Fecha de lanzamiento confirmada',
-          'Plan de comunicacion: canales internos + externos',
-          'Materiales preparados: guias ciudadano, FAQ, redes sociales',
-          'Runbook de lanzamiento: que hacer si X falla en dia 1',
-          'Decision: big bang vs gradual',
+          'Plan de comunicación: canales internos + externos',
+          'Materiales preparados: guías ciudadano, FAQ, redes sociales',
+          'Runbook de lanzamiento: qué hacer si X falla en día 1',
+          'Decisión: big bang vs gradual',
         ],
       },
     ],
     deliverables: [
       { text: 'Fecha de lanzamiento confirmada' },
-      { text: 'Plan de comunicacion documentado' },
-      { text: 'Materiales de comunicacion listos' },
+      { text: 'Plan de comunicación documentado' },
+      { text: 'Materiales de comunicación listos' },
       { text: 'Runbook de lanzamiento escrito' },
     ],
     attendees: [
-      { label: 'Comunicacion gobierno', required: true },
+      { label: 'Comunicación gobierno', required: true },
       { label: 'Coordinador', required: true },
-      { label: 'Lider partner', required: true },
+      { label: 'Líder partner', required: true },
     ],
   },
 ];
@@ -250,7 +250,7 @@ export const faseDMeetingModel = {
   description: 'En Fase D las reuniones son más frecuentes y más operativas. El Partner las lidera todas — capacitación de operadores, socialización de soporte, sesión ejecutiva, y comunicación. Sovra participa únicamente si hay un escalamiento técnico o político que el Partner no puede resolver solo.',
   partnerLeads: 'Capacitación operadores, socialización SLA, sesión ejecutiva, plan de comunicación',
   sovraAccompanies: 'Go-live (día 1), escalamiento de bugs críticos, conflicto político que amenaza lanzamiento',
-  minutaRule: 'Envía minuta después de cada reunión: qué se acordó, qué quedó pendiente, quién es responsable. En Fase D la frecuencia sube — puede ser necesaria minuta 2x por semana.',
+  minutaRule: 'Envía minuta después de cada reunión: qué se acordó, qué quedó pendiente, quién es responsable. En Fase D la frecuencia sube — puede ser necesaria minuta 2× por semana.',
 };
 
 // Testing pre-launch checklist
@@ -318,7 +318,7 @@ export const faseDTimeline = [
 ];
 
 export const faseDEscalationItems = [
-  'Problemas producción que afectan disponibilidad',
+  'Problemas en producción que afectan disponibilidad',
   'Gobierno quiere cambiar alcance antes del lanzamiento',
   'Conflicto político que amenaza el lanzamiento',
 ];

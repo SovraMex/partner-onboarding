@@ -15,26 +15,26 @@ export const editions: Edition[] = [
   {
     tag: 'COMPLETA',
     tagColor: 'blue',
-    sizeLabel: '10+ tramites',
-    title: 'Edicion estandar',
+    sizeLabel: '10+ trámites',
+    title: 'Edición estándar',
     features: [
-      '**5 roles** gobierno (dueno, coordinador, referente, tecnico, comunicacion)',
-      '**5 tramites** meta en 90 dias',
+      '**5 roles** gobierno (dueño, coordinador, especialista funcional, técnico, comunicación)',
+      '**5 trámites** meta en 90 días',
       '**2 capacitaciones** separadas (conceptual + funcional)',
-      '**Tecnico** dedicado en el equipo core',
+      '**Técnico** dedicado en el equipo core',
     ],
-    footnote: 'Este portal cubre esta edicion completa.',
+    footnote: 'Este portal cubre esta edición completa.',
   },
   {
-    tag: 'GOBIERNO PEQUENO',
+    tag: 'GOBIERNO PEQUEÑO',
     tagColor: 'orange',
-    sizeLabel: '<10 tramites',
-    title: 'Edicion simplificada',
+    sizeLabel: '<10 trámites',
+    title: 'Edición simplificada',
     features: [
-      '**3 roles** gobierno (coordinador, referente unico, comunicacion)',
-      '**2 tramites** meta en 90 dias',
-      '**1 capacitacion** condensada (conceptual + funcional)',
-      '**Tecnico** externalizado (partner o proveedor)',
+      '**3 roles** gobierno (coordinador, referente único, comunicación)',
+      '**2 trámites** meta en 90 días',
+      '**1 capacitación** condensada (conceptual + funcional)',
+      '**Técnico** externalizado (partner o proveedor)',
     ],
     footnoteLink: 'https://github.com/SovraMex/partner-system/blob/main/docs/09b-guia-implementacion-gobierno-pequeno.md',
     footnoteLinkLabel: 'Ver guia completa en GitHub ↗',
@@ -42,7 +42,7 @@ export const editions: Edition[] = [
 ];
 
 export const editionsNote =
-  'Mismo plazo, mismas fases. La edicion Gobierno Pequeno mantiene los 90 dias y las 5 etapas (A-E). Lo que cambia es el equipo, la cantidad de tramites, y la intensidad de las capacitaciones. La guía de este portal aplica para ambas — las diferencias estan documentadas en la guia.';
+  'Mismo plazo, mismas fases. La edición Gobierno Pequeño mantiene los 90 días y las 5 etapas (A-E). Lo que cambia es el equipo, la cantidad de trámites, y la intensidad de las capacitaciones. La guía de este portal aplica para ambas — las diferencias están documentadas en la guía.';
 
 export const editionsIntro =
-  'No todos los gobiernos son iguales. El criterio: si el gobierno tiene menos de 10 tramites totales, usa la edicion Gobierno Pequeno.';
+  'No todos los gobiernos son iguales. El criterio: si el gobierno tiene menos de 10 trámites totales, usa la edición Gobierno Pequeño.';

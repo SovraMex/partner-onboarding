@@ -55,15 +55,15 @@ export const faseCHero = {
 export const faseCContext = {
   completedInB: [
     'Equipo capacitado (conceptual + funcional)',
-    'Tramites priorizados y aprobados por dueno del proyecto',
-    'Integraciones definidas y plan tecnico acordado',
+    'Trámites priorizados y aprobados por dueño del proyecto',
+    'Integraciones definidas y plan técnico acordado',
     'Gobernanza lista: roles y permisos en plataforma',
   ],
-  focusNow: 'Digitalizar tramites, validar con areas duenas, testing end-to-end. Si el ciudadano puede completar sin ayuda, esta listo.',
+  focusNow: 'Digitalizar trámites, validar con áreas dueñas, testing end-to-end. Si el ciudadano puede completar sin ayuda, está listo.',
   criticalRoles: [
     { label: 'Especialista funcional — ejecuta modelado', color: 'purple' as const },
-    { label: 'Tecnico — integraciones', color: 'orange' as const },
-    { label: 'Areas duenas de tramites — validacion', color: 'blue' as const },
+    { label: 'Técnico — integraciones', color: 'orange' as const },
+    { label: 'Áreas dueñas de trámites — validación', color: 'blue' as const },
   ],
 };
 
@@ -107,7 +107,7 @@ export const faseCStorageKey = 'phaseC_checklist';
 export const faseCActivities: Activity[] = [
   {
     number: '1',
-    title: 'Modelado de tramites',
+    title: 'Modelado de trámites',
     tag: 'Continuo',
     tagType: 'required',
     duration: 'Semanas 6-7',
@@ -120,24 +120,24 @@ export const faseCActivities: Activity[] = [
       {
         label: 'Actividades',
         items: [
-          'Modelar formularios, etapas y flujos por tramite',
-          'Configurar catalogos y validaciones',
+          'Modelar formularios, etapas y flujos por trámite',
+          'Configurar catálogos y validaciones',
           'Aplicar imagen institucional (logo, colores, landing)',
-          'Coordinar con areas duenas para validacion',
+          'Coordinar con áreas dueñas para validación',
           'Iterar basado en feedback',
         ],
       },
     ],
     deliverables: [
-      { text: 'Tramites modelados en la plataforma' },
+      { text: 'Trámites modelados en la plataforma' },
       { text: 'Imagen institucional aplicada' },
-      { text: 'Formularios validados con operador real de cada tramite' },
-      { text: 'Catalogos y datos de referencia cargados' },
+      { text: 'Formularios validados con operador real de cada trámite' },
+      { text: 'Catálogos y datos de referencia cargados' },
     ],
     attendees: [
       { label: 'Especialista funcional (lidera)', required: true },
-      { label: 'Lider implementacion (coordina)', required: true },
-      { label: 'Areas duenas (validan)', required: false },
+      { label: 'Líder implementación (coordina)', required: true },
+      { label: 'Áreas dueñas (validan)', required: false },
     ],
   },
   {
@@ -155,7 +155,7 @@ export const faseCActivities: Activity[] = [
       {
         label: 'Actividades',
         items: [
-          'Implementar integracion IDP (prioridad #1 — sin esto no hay login ciudadano)',
+          'Implementar integración IDP (prioridad #1 — sin esto no hay login ciudadano)',
           'Pagos si aplica (agregar 2 semanas al timeline)',
           'Consultas a BD externas del gobierno',
           'Pruebas de conectividad y performance',
@@ -166,11 +166,11 @@ export const faseCActivities: Activity[] = [
       { text: 'IDP integrado y funcionando' },
       { text: 'Pagos configurados (si aplica)' },
       { text: 'Consultas BD respondiendo correctamente' },
-      { text: 'Documentacion tecnica de integraciones actualizada' },
+      { text: 'Documentación técnica de integraciones actualizada' },
     ],
     attendees: [
-      { label: 'Especialista tecnico partner', required: true },
-      { label: 'Tecnico gobierno', required: true },
+      { label: 'Especialista técnico partner', required: true },
+      { label: 'Técnico gobierno', required: true },
     ],
   },
   {
@@ -179,37 +179,37 @@ export const faseCActivities: Activity[] = [
     tag: 'Obligatorio',
     tagType: 'required',
     duration: 'Semana 8',
-    subtitle: 'Cada tramite funciona completo — del ciudadano al operador y de vuelta.',
+    subtitle: 'Cada trámite funciona completo — del ciudadano al operador y de vuelta.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Cada tramite funciona completo — del ciudadano al operador y de vuelta.',
+        content: 'Cada trámite funciona completo — del ciudadano al operador y de vuelta.',
       },
       {
         label: 'Protocolo de testing (7 pasos)',
         items: [
-          '**1.** Ciudadano encuentra el tramite en la guia',
+          '**1.** Ciudadano encuentra el trámite en la guía',
           '**2.** Ciudadano se registra/autentica',
           '**3.** Ciudadano completa formulario y adjunta documentos',
           '**4.** Operador recibe el expediente',
           '**5.** Operador gestiona las etapas',
-          '**6.** Ciudadano recibe notificacion del resultado',
+          '**6.** Ciudadano recibe notificación del resultado',
           '**7.** Documento de salida se genera correctamente',
         ],
       },
     ],
     deliverables: [
-      { text: 'Reporte de testing por tramite (paso / fallo / bugs)' },
+      { text: 'Reporte de testing por trámite (paso / fallo / bugs)' },
       { text: 'Lista de bugs con severidad y responsable' },
-      { text: 'Confirmacion de 0 bugs criticos abiertos' },
-      { text: 'Guia de tramites publica revisada y correcta' },
+      { text: 'Confirmación de 0 bugs críticos abiertos' },
+      { text: 'Guía de trámites pública revisada y correcta' },
     ],
     attendees: [
-      { label: 'Lider implementacion (coordina)', required: true },
-      { label: 'Alguien que NO participo en modelado (prueba ciudadano)', required: true },
+      { label: 'Líder implementación (coordina)', required: true },
+      { label: 'Alguien que NO participó en modelado (prueba ciudadano)', required: true },
       { label: 'Operador real (prueba operador)', required: true },
     ],
-    tip: 'Pidele a alguien que NO participo en modelado que complete el tramite como ciudadano. Si no puede sin ayuda, no esta listo. Estandariza naming de usuarios de prueba.',
+    tip: 'Pídele a alguien que NO participó en modelado que complete el trámite como ciudadano. Si no puede sin ayuda, no está listo. Estandariza naming de usuarios de prueba.',
   },
 ];
 

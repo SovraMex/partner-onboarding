@@ -55,14 +55,14 @@ export const faseBHero = {
 export const faseBContext = {
   completedInA: [
     'Roles asignados con nombre y apellido (partner + gobierno)',
-    'Alcance alineado y canales de comunicacion definidos',
+    'Alcance alineado y canales de comunicación definidos',
     'Gantt de trabajo aprobado',
     'Dominio solicitado a TI',
   ],
-  focusNow: 'Capacitar al equipo, priorizar tramites, definir integraciones y gobernanza. El gobierno sale de esta fase sabiendo operar la plataforma.',
+  focusNow: 'Capacitar al equipo, priorizar trámites, definir integraciones y gobernanza. El gobierno sale de esta fase sabiendo operar la plataforma.',
   criticalRoles: [
-    { label: 'Especialista funcional — 100% dedicacion', color: 'purple' as const },
-    { label: 'Tecnico — arquitectura', color: 'orange' as const },
+    { label: 'Especialista funcional — 100% dedicación', color: 'purple' as const },
+    { label: 'Técnico — arquitectura', color: 'orange' as const },
     { label: 'Coordinador — seguimiento', color: 'blue' as const },
   ],
 };
@@ -127,7 +127,7 @@ export const faseBPartnerPrep = {
 export const faseBMeetings: Meeting[] = [
   {
     number: '1',
-    title: 'Capacitacion Conceptual',
+    title: 'Capacitación Conceptual',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '2-3 horas',
@@ -135,15 +135,15 @@ export const faseBMeetings: Meeting[] = [
     sections: [
       {
         label: 'Objetivo',
-        content: 'Equipo core entiende identidad digital, credenciales verificables, ventanilla digital e interoperabilidad. No tecnico — conceptual.',
+        content: 'Equipo core entiende identidad digital, credenciales verificables, ventanilla digital e interoperabilidad. No técnico — conceptual.',
       },
       {
         label: 'Agenda',
         items: [
-          'Que es identidad digital y por que importa',
-          'Credenciales verificables: que son, como funcionan, casos reales',
+          'Qué es identidad digital y por qué importa',
+          'Credenciales verificables: qué son, cómo funcionan, casos reales',
           'Ventanilla digital: concepto y diferenciadores vs portal tradicional',
-          'Interoperabilidad: como se conectan los sistemas',
+          'Interoperabilidad: cómo se conectan los sistemas',
           'Casos reales de otros gobiernos (NL, SM, SJ)',
         ],
       },
@@ -155,27 +155,27 @@ export const faseBMeetings: Meeting[] = [
     ],
     attendees: [
       { label: 'Equipo core completo', required: true },
-      { label: 'Dueno del proyecto (recomendado)', required: false },
+      { label: 'Dueño del proyecto (recomendado)', required: false },
     ],
   },
   {
     number: '2',
-    title: 'Capacitacion Funcional SovraGov',
+    title: 'Capacitación Funcional SovraGov',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '3-4 horas',
-    subtitle: 'Los especialistas funcionales operan la plataforma. No presentacion — hands-on con la instancia real.',
+    subtitle: 'Los especialistas funcionales operan la plataforma. No presentación — hands-on con la instancia real.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Los especialistas funcionales operan la plataforma. No presentacion — hands-on con la instancia real.',
+        content: 'Los especialistas funcionales operan la plataforma. No presentación — hands-on con la instancia real.',
       },
       {
         label: 'Agenda',
         items: [
-          'Landing y guia de tramites',
-          'Catalogos y configuracion',
-          'Modulo de tramites (formularios, etapas, flujos)',
+          'Landing y guía de trámites',
+          'Catálogos y configuración',
+          'Módulo de trámites (formularios, etapas, flujos)',
           'Inspecciones y citas',
           'Pagos y notificaciones',
           'Registro e identidad',
@@ -192,62 +192,62 @@ export const faseBMeetings: Meeting[] = [
     attendees: [
       { label: 'Especialista funcional', required: true },
       { label: 'Coordinador', required: true },
-      { label: 'Tecnico', required: true },
+      { label: 'Técnico', required: true },
     ],
     tip: 'Capacita con la instancia real, no con slides. Si el especialista no toca la plataforma, no retiene nada. Learning by doing.',
   },
   {
     number: '3',
-    title: 'Guia Metodologica — Discovery de tramites',
+    title: 'Guía Metodológica — Discovery de trámites',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '2 horas',
-    subtitle: 'El gobierno sabe como relevar, priorizar y documentar sus tramites para digitalizacion.',
+    subtitle: 'El gobierno sabe cómo relevar, priorizar y documentar sus trámites para digitalización.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'El gobierno sabe como relevar, priorizar y documentar sus tramites para digitalizacion.',
+        content: 'El gobierno sabe cómo relevar, priorizar y documentar sus trámites para digitalización.',
       },
       {
         label: 'Agenda',
         items: [
-          'Como relevar tramites existentes (fuentes: operadores, formularios papel, normativa)',
-          'Criterio de priorizacion: alto volumen + baja complejidad + proceso interno',
-          'Como definir gobernanza: roles y permisos en plataforma',
-          'Decision de autenticacion ciudadana (IDP propio vs gobierno)',
+          'Cómo relevar trámites existentes (fuentes: operadores, formularios papel, normativa)',
+          'Criterio de priorización: alto volumen + baja complejidad + proceso interno',
+          'Cómo definir gobernanza: roles y permisos en plataforma',
+          'Decisión de autenticación ciudadana (IDP propio vs gobierno)',
         ],
       },
     ],
     deliverables: [
-      { text: 'Lista priorizada de tramites para los 90 dias (aprobada por dueno del proyecto)' },
-      { text: 'Gobernanza definida: quien puede que en la plataforma' },
-      { text: 'Decision de autenticacion registrada' },
-      { text: 'Diccionarios de datos iniciados para tramites priorizados' },
+      { text: 'Lista priorizada de trámites para los 90 días (aprobada por dueño del proyecto)' },
+      { text: 'Gobernanza definida: quién puede qué en la plataforma' },
+      { text: 'Decisión de autenticación registrada' },
+      { text: 'Diccionarios de datos iniciados para trámites priorizados' },
     ],
     attendees: [
       { label: 'Especialista funcional', required: true },
       { label: 'Coordinador', required: true },
-      { label: 'Dueno del proyecto (aprueba priorizacion)', required: true },
+      { label: 'Dueño del proyecto (aprueba priorización)', required: true },
     ],
   },
   {
     number: '4',
-    title: 'Reunion Tecnica',
+    title: 'Reunión Técnica',
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '1.5-2 horas',
-    subtitle: 'Tecnicos de ambos lados alinean arquitectura, APIs, integraciones, seguridad.',
+    subtitle: 'Técnicos de ambos lados alinean arquitectura, APIs, integraciones, seguridad.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Tecnicos de ambos lados alinean arquitectura, APIs, integraciones, seguridad.',
+        content: 'Técnicos de ambos lados alinean arquitectura, APIs, integraciones, seguridad.',
       },
       {
         label: 'Agenda',
         items: [
           'Arquitectura de la plataforma (alto nivel)',
           'Seguridad y backups',
-          'APIs disponibles y documentacion',
+          'APIs disponibles y documentación',
           'Integraciones acordadas: IDP, pagos, consultas BD',
           'Plan tecnico con responsables y timeline',
           'Status del dominio',
@@ -255,27 +255,27 @@ export const faseBMeetings: Meeting[] = [
       },
     ],
     deliverables: [
-      { text: 'Plan tecnico documentado con integraciones, responsables y fechas' },
+      { text: 'Plan técnico documentado con integraciones, responsables y fechas' },
       { text: 'APIs documentadas y compartidas' },
       { text: 'Status de dominio verificado' },
-      { text: 'Accesos tecnicos (sandbox, APIs, documentacion)' },
+      { text: 'Accesos técnicos (sandbox, APIs, documentación)' },
     ],
     attendees: [
-      { label: 'Especialista tecnico partner', required: true },
-      { label: 'Tecnico gobierno', required: true },
+      { label: 'Especialista técnico partner', required: true },
+      { label: 'Técnico gobierno', required: true },
       { label: 'Coordinador (asiste pero no lidera)', required: false },
     ],
   },
 ];
 
 export const faseBMeetingsTip =
-  'Siempre pregunta si el gobierno tiene base de datos de usuarios existente. Migracion acelera adopcion.';
+  'Siempre pregunta si el gobierno tiene base de datos de usuarios existente. Migración acelera adopción.';
 
 // Decisions
 export const faseBDecisions: Decision[] = [
   {
     question: '¿Autenticación propia o IDP del gobierno?',
-    criteria: 'Decisión del gobierno, no del Partner. Presenta trade-offs: integrar IDP (cero migración) vs auth propia (rápido, pero dos bases de usuarios). Default: integrarlo.',
+    criteria: 'Decisión del gobierno, no del Partner. Presenta trade-offs: integrar IDP (cero migración) vs autenticación propia (rápido, pero dos bases de usuarios). Default: integrarlo.',
   },
   {
     question: '¿Qué trámites incluyen pagos?',
@@ -283,7 +283,7 @@ export const faseBDecisions: Decision[] = [
   },
   {
     question: '¿El gobierno tiene equipo de digitalización interno?',
-    criteria: 'Fomenta autonomía si sí.',
+    criteria: 'Fomenta autonomía si lo tiene.',
   },
 ];
 
@@ -320,7 +320,7 @@ export const faseBSidebarRoles = [
   { name: 'Coordinador', desc: 'Orquesta capacitaciones' },
   { name: 'Esp. funcional', desc: '100% dedicación' },
   { name: 'Técnico', desc: 'APIs, integraciones' },
-  { name: 'Dueño proyecto', desc: 'Aprueba priorización' },
+  { name: 'Dueño del proyecto', desc: 'Aprueba priorización' },
 ];
 
 export const faseBEscalationItems = [

@@ -60,16 +60,16 @@ export const faseEHero = {
 // Context card
 export const faseEContext = {
   completedInD: [
-    'Operadores capacitados en su flujo especifico',
+    'Operadores capacitados en su flujo específico',
     'Modelo de soporte socializado (3 niveles, SLAs claros)',
-    'Comunicacion lista — materiales y plan de lanzamiento',
+    'Comunicación lista — materiales y plan de lanzamiento',
     'Fecha de lanzamiento confirmada',
   ],
-  focusNow: 'Estabilidad, adopcion, metricas, lecciones aprendidas, y cierre. Las 2 semanas mas criticas despues del go-live.',
+  focusNow: 'Estabilidad, adopción, métricas, lecciones aprendidas, y cierre. Las 2 semanas más críticas después del go-live.',
   criticalRoles: [
     { label: 'Nivel 1 soporte — gobierno resuelve operativo', color: 'green' as const },
     { label: 'Coordinador — reporta', color: 'blue' as const },
-    { label: 'Dueno del proyecto — narrativa politica', color: 'purple' as const },
+    { label: 'Dueño del proyecto — narrativa política', color: 'purple' as const },
   ],
 };
 
@@ -109,33 +109,33 @@ export const faseEActivities: Activity[] = [
     tag: 'Continuo',
     tagType: 'required',
     duration: 'Semanas 11-12',
-    subtitle: 'Detectar problemas temprano, estabilizar la plataforma, y asegurar adopcion.',
+    subtitle: 'Detectar problemas temprano, estabilizar la plataforma, y asegurar adopción.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Detectar problemas temprano, estabilizar la plataforma, y asegurar adopcion.',
+        content: 'Detectar problemas temprano, estabilizar la plataforma, y asegurar adopción.',
       },
       {
         label: 'Actividades',
         items: [
-          'Monitorear metricas diarias (usuarios, tramites, errores)',
-          'Soporte segun SLA — disponible diariamente las primeras 2 semanas',
-          'Ajustes menores post-produccion',
-          'Acompanar lanzamiento publico si lo hay',
-          'Seguimiento politico-comunicacional',
+          'Monitorear métricas diarias (usuarios, trámites, errores)',
+          'Soporte según SLA — disponible diariamente las primeras 2 semanas',
+          'Ajustes menores post-producción',
+          'Acompañar lanzamiento público si lo hay',
+          'Seguimiento político-comunicacional',
         ],
       },
     ],
     deliverables: [
-      { text: 'Dashboard de metricas (o reporte semanal) compartido con gobierno' },
+      { text: 'Dashboard de métricas (o reporte semanal) compartido con gobierno' },
       { text: 'Bugs post-lanzamiento resueltos' },
       { text: 'Ajustes funcionales implementados' },
-      { text: 'Comunicacion de lanzamiento ejecutada' },
+      { text: 'Comunicación de lanzamiento ejecutada' },
     ],
     attendees: [
-      { label: 'Lider partner (coordina)', required: true },
+      { label: 'Líder partner (coordina)', required: true },
       { label: 'Equipo Nivel 1 gobierno (opera)', required: true },
-      { label: 'Comunicacion (lanzamiento publico)', required: false },
+      { label: 'Comunicación (lanzamiento público)', required: false },
     ],
   },
   {
@@ -144,18 +144,18 @@ export const faseEActivities: Activity[] = [
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '1 hora',
-    subtitle: 'Cada implementacion ensena algo. Documentar mejora el sistema para todos.',
+    subtitle: 'Cada implementación enseña algo. Documentar mejora el sistema para todos.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Cada implementacion ensena algo. Documentar mejora el sistema para todos.',
+        content: 'Cada implementación enseña algo. Documentar mejora el sistema para todos.',
       },
       {
         label: 'Agenda',
         items: [
-          '30 min con tu equipo: que funciono, que no, que harias diferente',
+          '30 min con tu equipo: qué funcionó, qué no, qué harías diferente',
           '30 min con coordinador del gobierno: su perspectiva',
-          'Consolidar en documento unico',
+          'Consolidar en documento único',
         ],
       },
     ],
@@ -165,7 +165,7 @@ export const faseEActivities: Activity[] = [
       { text: 'Recomendaciones para la siguiente fase del gobierno' },
     ],
     attendees: [
-      { label: 'Lider partner', required: true },
+      { label: 'Líder partner', required: true },
       { label: 'Equipo partner', required: true },
       { label: 'Coordinador gobierno', required: true },
     ],
@@ -176,33 +176,33 @@ export const faseEActivities: Activity[] = [
     tag: 'Obligatoria',
     tagType: 'required',
     duration: '1-2 horas',
-    subtitle: 'Cerrar el ciclo de 90 dias con metricas, resultados, y plan de continuidad.',
+    subtitle: 'Cerrar el ciclo de 90 días con métricas, resultados, y plan de continuidad.',
     sections: [
       {
         label: 'Objetivo',
-        content: 'Cerrar el ciclo de 90 dias con metricas, resultados, y plan de continuidad.',
+        content: 'Cerrar el ciclo de 90 días con métricas, resultados, y plan de continuidad.',
       },
       {
         label: 'Agenda',
         items: [
-          'Presentar reporte final: metricas de adopcion, operacion y calidad',
+          'Presentar reporte final: métricas de adopción, operación y calidad',
           'Lecciones aprendidas (resumen)',
-          'Plan de continuidad: que sigue, quien opera, soporte post-90 dias',
-          'Definir roles post-implementacion: quien opera, quien da soporte, quien escala',
+          'Plan de continuidad: qué sigue, quién opera, soporte post-90 días',
+          'Definir roles post-implementación: quién opera, quién da soporte, quién escala',
           'Celebrar lo logrado — el gobierno merece reconocimiento',
         ],
       },
     ],
     deliverables: [
-      { text: 'Reporte final de implementacion (al gobierno y a Sovra)' },
+      { text: 'Reporte final de implementación (al gobierno y a Sovra)' },
       { text: 'Plan de continuidad documentado' },
-      { text: 'Roles post-90 dias definidos y socializados' },
-      { text: 'One-pager de resultados (lo que el dueno lleva a su jefe)' },
+      { text: 'Roles post-90 días definidos y socializados' },
+      { text: 'One-pager de resultados (lo que el dueño lleva a su jefe)' },
     ],
     attendees: [
-      { label: 'Dueno del proyecto', required: true },
+      { label: 'Dueño del proyecto', required: true },
       { label: 'Coordinador', required: true },
-      { label: 'Lider partner', required: true },
+      { label: 'Líder partner', required: true },
     ],
     tip: 'Las metricas mas poderosas son de impacto: "Ahorramos X horas de fila al ciudadano." Ayuda al gobierno a contar esa historia.',
   },
@@ -211,29 +211,29 @@ export const faseEActivities: Activity[] = [
 // Metrics
 export const faseEMetrics: MetricCategory[] = [
   {
-    name: 'ADOPCION',
+    name: 'ADOPCIÓN',
     color: 'blue',
     metrics: [
-      'Usuarios registrados vs padron',
-      'Tramites iniciados/semana',
-      'Tasa conversion',
+      'Usuarios registrados vs padrón',
+      'Trámites iniciados/semana',
+      'Tasa conversión',
     ],
   },
   {
-    name: 'OPERACION',
+    name: 'OPERACIÓN',
     color: 'orange',
     metrics: [
-      'Tiempo resolucion',
-      'Tramites en cola >48hrs',
-      'Tickets por categoria',
+      'Tiempo resolución',
+      'Trámites en cola >48hrs',
+      'Tickets por categoría',
     ],
   },
   {
     name: 'CALIDAD',
     color: 'green',
     metrics: [
-      'Tramites rechazados',
-      'Satisfaccion operador',
+      'Trámites rechazados',
+      'Satisfacción operador',
       'Incidentes plataforma',
     ],
   },
@@ -247,7 +247,7 @@ export const faseEDecisions: Decision[] = [
   },
   {
     question: '¿Cuándo expandir?',
-    criteria: 'Solo cuando operación actual estable y gobierno confía.',
+    criteria: 'Solo cuando operación actual sea estable y gobierno confíe.',
   },
 ];
 
@@ -278,7 +278,7 @@ export const faseETimeline = [
 
 export const faseEEscalationItems = [
   'Inestabilidad en producción',
-  'Gobierno quiere expandir alcance — coordina con Sovra',
+  'Gobierno quiere expandir alcance — coordinación con Sovra',
 ];
 
 export const faseEKitItems = [
