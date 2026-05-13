@@ -95,6 +95,31 @@ export const contingencySteps: ContingencyStep[] = [
 export const contingencyRule =
   'La salida del dueño político no es excusa para pausar el reloj. Es un trigger para evaluar si el proyecto sigue siendo viable. Si detectas que ya no hay respaldo político suficiente, escala a Sovra inmediatamente.';
 
+// Common errors
+export interface ErrorItem {
+  title: string;
+  fix: string;
+}
+
+export const fase0Errors: ErrorItem[] = [
+  {
+    title: '"Arrancar sin readiness completo — 2 señales rojas pero el gobierno presiona."',
+    fix: 'No arranques. Ofrece pre-discovery para trabajar las señales rojas. Arrancar sin readiness es la causa #1 de proyectos estancados en semana 4.',
+  },
+  {
+    title: '"Asumir que los roles se asignarán solos."',
+    fix: 'Exige nombres con apellido en la primera semana. Sin nombre = sin rol. Si el gobierno dice "ya veremos quién", no avances a Fase A.',
+  },
+  {
+    title: '"No validar que el IDP esté operativo."',
+    fix: 'Pregunta en semana 0, no en semana 6. Si el IDP no está listo, toda la autenticación ciudadana se bloquea. Pide evidencia técnica, no promesas.',
+  },
+  {
+    title: '"No definir canales de comunicación desde el inicio."',
+    fix: 'Define canal, frecuencia y responsables antes de la primera reunión. Sin canal claro, los mensajes se pierden entre correos, WhatsApp y reuniones informales.',
+  },
+];
+
 // Readiness declaration template
 export const readinessTemplate = `DECLARACIÓN DE READINESS
 Fecha: ___________

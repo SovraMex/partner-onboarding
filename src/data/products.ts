@@ -30,7 +30,7 @@ export const products: Product[] = [
   {
     icon: '📚',
     title: 'Pensum + Syllabus',
-    description: 'Diseño del sistema educativo (interno) + plan de estudio (partner). 3 dimensiones × 18 módulos.',
+    description: 'Diseño del plan de estudios + plan de certificación. 3 dimensiones × 18 módulos.',
     githubLink: 'https://github.com/SovraMex/partner-system/tree/main/docs',
     githubLabel: '↗ GitHub: partner-system/docs',
     category: 'antes',
@@ -76,7 +76,7 @@ export const products: Product[] = [
   {
     icon: '🤖',
     title: 'Agente IA de Soporte',
-    description: 'Clasifica y resuelve tickets automáticamente. 54 páginas de manuales como base de conocimiento (RAG).',
+    description: 'Clasifica y resuelve tickets automáticamente. 54 páginas de manuales de la plataforma como base de conocimiento.',
     githubLink: 'https://github.com/sovrahq/knowledge-base',
     githubLabel: '↗ GitHub: sovrahq/knowledge-base',
     category: 'siempre',

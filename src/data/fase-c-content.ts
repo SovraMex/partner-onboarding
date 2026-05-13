@@ -118,6 +118,16 @@ export const faseCActivities: Activity[] = [
         content: 'Cada trámite priorizado está digitalizado. El Partner guía al equipo del gobierno en el modelado — el gobierno ejecuta, el Partner enseña.',
       },
       {
+        label: 'Qué vas a modelar en la plataforma',
+        items: [
+          '**Formulario del trámite** — el cuestionario que completa el ciudadano. Tipos de preguntas disponibles: texto, número, fecha, selección, carga de archivos, catálogos vinculados, lógica condicional entre campos',
+          '**Etapas operativas** — el flujo interno por el que pasa cada solicitud después del formulario: revisión documental, pagos (si aplica), citas presenciales, inspecciones de campo, subetapas por área, y emisión del documento',
+          '**Documento de salida** — el archivo final que recibe el ciudadano (PDF, certificado, permiso). Se arma con un editor visual que combina elementos de diseño y variables del trámite',
+          '**Ficha del trámite** — la página pública que el ciudadano ve en la guía de trámites antes de iniciar su solicitud',
+          '**Configuración general** — reglas globales: visibilidad, dependencia entre trámites, identificadores, firmas y vigencia',
+        ],
+      },
+      {
         label: 'Actividades',
         items: [
           'Modelar formularios, etapas y flujos por trámite',

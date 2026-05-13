@@ -120,7 +120,7 @@ export const faseBPrinciple = {
 // Partner preparation tip
 export const faseBPartnerPrep = {
   label: 'PREPARACIÓN DEL PARTNER',
-  text: 'Antes de capacitar, conoce los temas a profundidad. El Kit incluye material estándar, pero la preparación real viene de las fuentes de conocimiento: sovra.io/es/knowledge, manuales técnicos. No presentes lo que no entiendes — el gobierno lo nota.',
+  text: 'Antes de capacitar, conoce los temas a profundidad. El Kit incluye material estándar, pero la preparación real viene de las fuentes de conocimiento: sovra.io/es/knowledge, manuales de la plataforma. No presentes lo que no entiendes — el gobierno lo nota.',
 };
 
 // Meetings
