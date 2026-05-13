@@ -47,7 +47,7 @@ export interface ErrorItem {
 export const faseCHero = {
   badge: 'Semanas 6–8 — Fase C',
   badgeColor: 'orange' as const,
-  title: 'Modelado y Testing',
+  title: 'Modelado y configuración',
   description: 'Modelar trámites en la plataforma, validar con áreas dueñas y probar end-to-end. Si el ciudadano puede completar sin ayuda extra, está listo.',
 };
 
@@ -249,7 +249,7 @@ export const faseCErrors: ErrorItem[] = [
 export const faseCTimeline = [
   { label: 'Fase A — Inicio', weeks: 'S1', status: 'done' as const },
   { label: 'Fase B — Preparación', weeks: 'S2-5', status: 'done' as const },
-  { label: 'Fase C — Modelado', weeks: 'S6-8', status: 'active' as const },
+  { label: 'Fase C — Modelado y configuración', weeks: 'S6-8', status: 'active' as const },
   { label: 'Fase D — Pre-lanzamiento', weeks: 'S9-10', status: 'pending' as const },
   { label: 'Fase E — Post-lanzamiento', weeks: 'S11-12', status: 'pending' as const },
 ];

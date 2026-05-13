@@ -312,7 +312,7 @@ export const faseDErrors: ErrorItem[] = [
 export const faseDTimeline = [
   { label: 'Fase A — Inicio', weeks: 'S1', status: 'done' as const },
   { label: 'Fase B — Preparación', weeks: 'S2-5', status: 'done' as const },
-  { label: 'Fase C — Modelado', weeks: 'S6-8', status: 'done' as const },
+  { label: 'Fase C — Modelado y configuración', weeks: 'S6-8', status: 'done' as const },
   { label: 'Fase D — Pre-lanzamiento', weeks: 'S9-10', status: 'active' as const },
   { label: 'Fase E — Post-lanzamiento', weeks: 'S11-12', status: 'pending' as const },
 ];

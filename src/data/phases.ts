@@ -15,11 +15,11 @@ export interface Phase {
 export const phases: Phase[] = [
   {
     id: 'fase-0',
-    name: 'Preparación',
+    name: 'Readiness',
     weeks: 'Pre-inicio',
     description: 'Roles, readiness, modelo de soporte. Todo lo que necesitas saber.',
     badgeColor: 'blue',
-    badgeLabel: 'FASE 0',
+    badgeLabel: 'PRE-A',
     route: '/fase-0',
     status: 'current',
   },
@@ -47,7 +47,7 @@ export const phases: Phase[] = [
   },
   {
     id: 'fase-c',
-    name: 'Modelado',
+    name: 'Modelado y configuración',
     weeks: 'Semanas 6–8',
     description: 'Digitalización, validación y testing end-to-end.',
     badgeColor: 'orange',

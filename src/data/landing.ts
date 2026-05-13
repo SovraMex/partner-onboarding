@@ -9,7 +9,7 @@ export const landingHero = {
 export const timelineWeekLabels = ['S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8', 'S9', 'S10', 'S11', 'S12'];
 
 export const ctaButton = {
-  text: 'Empezar Fase 0: Preparación →',
+  text: 'Empezar Pre-A: Readiness →',
   href: '/fase-0',
   disabledHint: 'Completa la evaluación de readiness para continuar',
   passHint: 'El gobierno tiene las condiciones mínimas. Arranca con confianza.',

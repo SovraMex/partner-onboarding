@@ -42,7 +42,7 @@ export const editions: Edition[] = [
 ];
 
 export const editionsNote =
-  'Mismo plazo, mismas fases. La edición Gobierno Pequeño mantiene los 90 días y las 5 etapas (A-E). Lo que cambia es el equipo, la cantidad de trámites, y la intensidad de las capacitaciones. La guía de este portal aplica para ambas — las diferencias están documentadas en la guía.';
+  'Mismo plazo, mismas fases. La edición Gobierno Pequeño mantiene los 90 días y las 5 fases (A-E). Lo que cambia es el equipo, la cantidad de trámites, y la intensidad de las capacitaciones. La guía de este portal aplica para ambas — las diferencias están documentadas en la guía.';
 
 export const editionsIntro =
   'No todos los gobiernos son iguales. El criterio: si el gobierno tiene menos de 10 trámites totales, usa la edición Gobierno Pequeño.';

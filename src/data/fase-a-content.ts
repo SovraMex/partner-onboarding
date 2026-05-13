@@ -52,7 +52,7 @@ export const faseAHero = {
 
 // Where you are card
 export const faseAContext = {
-  description: 'Si pasaste el readiness y conoces los roles del equipo (ver en Fase 0), estás listo para ejecutar.',
+  description: 'Si pasaste el readiness y conoces los roles del equipo (ver en Pre-A), estás listo para ejecutar.',
   criticalRoles: ['Líder partner', 'Coordinador gobierno', 'Dueño del proyecto'],
 };
 
@@ -297,7 +297,7 @@ export const faseAErrors: ErrorItem[] = [
 export const faseATimeline = [
   { label: 'Fase A — Inicio', weeks: 'S1', status: 'active' as const },
   { label: 'Fase B — Preparación', weeks: 'S2-5', status: 'pending' as const },
-  { label: 'Fase C — Modelado', weeks: 'S6-8', status: 'pending' as const },
+  { label: 'Fase C — Modelado y configuración', weeks: 'S6-8', status: 'pending' as const },
   { label: 'Fase D — Pre-lanzamiento', weeks: 'S9-10', status: 'pending' as const },
   { label: 'Fase E — Post-lanzamiento', weeks: 'S11-12', status: 'pending' as const },
 ];

@@ -129,10 +129,10 @@ export interface SidebarTimelineItem {
 }
 
 export const fase0Timeline: SidebarTimelineItem[] = [
-  { label: 'Fase 0 — Preparación', weeks: 'Pre', status: 'active' },
+  { label: 'Pre-A — Readiness', weeks: 'Pre', status: 'active' },
   { label: 'Fase A — Inicio', weeks: 'S1', status: 'pending' },
   { label: 'Fase B — Preparación', weeks: 'S2-5', status: 'pending' },
-  { label: 'Fase C — Modelado', weeks: 'S6-8', status: 'pending' },
+  { label: 'Fase C — Modelado y configuración', weeks: 'S6-8', status: 'pending' },
   { label: 'Fase D — Pre-lanzamiento', weeks: 'S9-10', status: 'pending' },
   { label: 'Fase E — Post-lanzamiento', weeks: 'S11-12', status: 'pending' },
 ];
@@ -157,6 +157,6 @@ export const fase0EscalationItems: string[] = [
 export const fase0Hero = {
   badge: 'Antes de arrancar',
   badgeColor: 'blue' as const,
-  title: 'Fase 0 — Preparación',
+  title: 'Pre-A — Readiness',
   description: 'Todo lo que necesitas saber antes de la primera reunión con el gobierno. Roles, readiness, modelo de soporte, y cómo mantener la claridad durante 90 días.',
 };
