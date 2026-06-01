@@ -35,6 +35,12 @@ export default function RootLayout({
       lang="es"
       className={`${plusJakartaSans.variable} ${figtree.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
